@@ -1,12 +1,12 @@
 import classNames from "classnames";
-export default function PrimaryButton({
+export default function SecondaryButton({
   children,
   className,
   onClick,
   ...props
 }) {
   const cx = classNames([
-    "bg-primary rounded-full text-white py-4 px-10",
+    "border border-primary hover:bg-primary hover:text-white transition-colors duration-300  rounded-full  py-4 px-10",
     className,
   ]);
 
