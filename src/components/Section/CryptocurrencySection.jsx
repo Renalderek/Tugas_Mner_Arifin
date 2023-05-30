@@ -1,5 +1,6 @@
 import emoji from "react-easy-emoji";
-import { BsChevronBarRight } from "react-icons/bs";
+import { BsChevronBarRight, BsPlus } from "react-icons/bs";
+
 export default function CryptocurrencySection() {
   return (
     <section className="mt-18">
@@ -16,6 +17,20 @@ export default function CryptocurrencySection() {
                 More
                 <BsChevronBarRight className="inline ml-2" />
               </a>
+            </div>
+            <div>
+              <div className="grid grid-cols-3 mb-4">
+                <span className="text-gray">Name</span>
+                <span className="text-gray">Price</span>
+                <span className="text-gray">Chart</span>
+              </div>
+              <div className="grid grid-cols-3">
+                <div>Bitscoin</div>
+                <div className="flex items-center">
+                  <BsPlus className="text-gren inline mr-2" />
+                  $43,183,13
+                </div>
+              </div>
             </div>
           </div>
           <div className="px-4"></div>
